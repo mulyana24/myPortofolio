@@ -1,14 +1,17 @@
 {
+  "homepage": "https://mulyana24.github.io/myPortofolio",
   "name": "portofolio-homepage",
   "version": "1.0.0",
   "description": "Zein's website",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d deploy",
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "lint": "next lint"
   },
   "keywords": [],
-  "author": "Zein <wifisableng@gmail.com>",
+  "author": "Zein <wifisableng19@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/icons": "^1.1.7",
