@@ -22,7 +22,7 @@ const Navbar = props => {
     const {path} = props
 
     return (
-        <Box position="fixed" as="nav" w="100%" bg={useColorModeValue('#ffffff40', '20202380')} style={{backdropFilter: 'blur(10px)'}} zIndex={1} align="right" {...props}>
+        <Box position="fixed" as="nav" w="100%" bg={useColorModeValue('#ffffff40', '20202380')} style={{backdropFilter: 'blur(10px)'}} zIndex={1} {...props}>
             <Container display="flex" p={2} maxW="container.md" warp="warp" align="center" justify="space-betwen">
                 <Flex align="center" mr={5}>
                     <Heading as="h1" size="lg" letterSpacing={'tighter'}>
@@ -41,6 +41,7 @@ const Navbar = props => {
                         Posts
                     </LinkItem>
                 </Stack>
+                
 
                 <Box flex={1} align="right" >
                     <ThemeToggleButton/>
